@@ -5,7 +5,7 @@ from nats.aio.errors import ErrConnectionClosed, ErrTimeout, ErrNoServers
 async def run():
     # It is very likely that the demo server will see traffic from clients other than yours.
     # To avoid this, start your own locally and modify the example to use it.
-    nc = await nats.connect("nats://nats_client:XfBF4V1iAx@localhost:4222")
+    nc = await nats.connect("nats://NATS_USER:NATS_PASS@localhost:4222")
 
     # You can also use the following for TLS against the demo server.
     # 
