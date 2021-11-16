@@ -25,7 +25,7 @@ export NATS_PASS=$(kubectl get cm --namespace nats nats -o jsonpath='{.data.*}' 
 echo -e "Client credentials:\n\tUser: $NATS_USER\n\tPassword: $NATS_PASS"
 ```
 
-You can intall NATS client locally ans run a simple test:
+You can intall NATS client locally and run a simple test:
 
 ```bash
 GO111MODULE=off go get github.com/nats-io/nats.go
