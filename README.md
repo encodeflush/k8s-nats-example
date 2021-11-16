@@ -31,6 +31,7 @@ You can intall NATS client locally and run a simple test:
 GO111MODULE=off go get github.com/nats-io/nats.go
 cd $GOPATH/src/github.com/nats-io/nats.go/examples/nats-pub && go install && cd
 cd $GOPATH/src/github.com/nats-io/nats.go/examples/nats-echo && go install && cd
+# Before running the test script, change the NATS server user and password <nats://NATS_USER:NATS_PASS@localhost:4222>
 python client/sample.py
 Received a message on 'bar ': First
 Received a message on 'bar ': Second
